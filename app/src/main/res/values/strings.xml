@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Go</string>
+    <string name="essay_title">鸡汤</string>
+    <string name="article_title">文章</string>
+    <string name="movie_title">电影</string>
+    <string name="drawer_open">drawer is open</string>
+    <string name="drawer_close">drawer is close</string>
+    <string name="title_activity_soup_detail">SoupDetailActivity</string>
+    <string name="soup_detail_show">全屏看图</string>
+    <string name="soup_detail_download">图片下载</string>
+    <string name="soup_detail_share">鸡汤分享</string>
+    <string name="title_activity_soup_detail_full_image">SoupDetailFullImageActivity</string>
+    <string name="net_error">网络抽风了*_*点我</string>
+</resources>

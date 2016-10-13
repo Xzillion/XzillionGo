@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <!--带透明度的黑色背景-->
+    <color name="black_alpha">#3d000000</color>
+    <!--鸡汤item标题颜色-->
+    <color name="soup_item_title">#ffffffff</color>
+    <!--鸡汤item背景色-->
+    <color name="soup_item_bg">#ffffffff</color>
+    <!--刷新动画的背景颜色-->
+    <color name="swipe_bg_color">#ffffffff</color>
+    <!--刷新动画的默认动画颜色-->
+    <color name="swipe_animate_color">#3F51B5</color>
+    <color name="bg_color">#ffffffff</color>
+</resources>

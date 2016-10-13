@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="250.0dp"
+    android:background="@color/soup_item_bg"
+    android:id="@+id/list_item">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:transitionName="soupView">
+        <ImageView
+            android:id="@+id/soup_item_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop" />
+        <TextView
+            android:id="@+id/soup_item_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignBottom="@id/soup_item_image"
+            android:layout_alignTop="@+id/soup_item_image"
+            android:layout_alignLeft="@+id/soup_item_image"
+            android:layout_alignRight="@+id/soup_item_image"
+            android:background="@color/black_alpha"
+            android:gravity="center"
+            android:text="VOL.1444"
+            android:textSize="30.0sp"
+            android:textStyle="bold"
+            android:textColor="@color/soup_item_title"
+            />
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8.0dip"
+        android:layout_marginRight="8.0dip"
+        android:textSize="12.0sp"
+        android:gravity="left"
+        android:textColor="@color/soup_item_title"
+        android:text="万物理论 饭太稀 作品"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:id="@+id/soup_item_author"/>
+
+</RelativeLayout>

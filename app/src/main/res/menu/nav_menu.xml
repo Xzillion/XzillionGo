@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/menu_soup"
+            android:icon="@drawable/ic_whatshot_black_48dp"
+            android:checked="true"
+            android:title="@string/essay_title">
+        </item>
+        <item android:id="@+id/menu_article"
+            android:icon="@drawable/ic_my_library_books_black_48dp"
+            android:title="@string/article_title">
+        </item>
+        <item android:id="@+id/menu_movie"
+            android:icon="@drawable/ic_movie_creation_black_48dp"
+            android:title="@string/movie_title">
+        </item>
+    </group>
+</menu>
