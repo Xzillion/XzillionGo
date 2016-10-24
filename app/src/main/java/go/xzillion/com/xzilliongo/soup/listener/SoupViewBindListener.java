@@ -23,6 +23,7 @@ import com.bumptech.glide.request.target.ImageViewTarget;
 import com.google.gson.Gson;
 
 import go.xzillion.com.xzilliongo.R;
+import go.xzillion.com.xzilliongo.common.MyAppTheme;
 import go.xzillion.com.xzilliongo.common.listener.ViewBindListener;
 import go.xzillion.com.xzilliongo.soup.entity.Soup;
 import go.xzillion.com.xzilliongo.soup.view.SoupDetailActivity;
@@ -38,6 +39,7 @@ public class SoupViewBindListener extends ViewBindListener implements View.OnCli
     private ImageView soupItemImage;
     private TextView soupItemTitle;
     private TextView soupItemAuthor;
+    private MyAppTheme myAppTheme = MyAppTheme.getInstance();
     public SoupViewBindListener(Context context, View view) {
         super(context, view);
         soupItemImage = (ImageView) view.findViewById(R.id.soup_item_image);
@@ -60,8 +62,8 @@ public class SoupViewBindListener extends ViewBindListener implements View.OnCli
 
                         @Override
                         public void onGenerated(Palette palette) {
-                            SoupViewBindListener.this.soup.getData().setColor_swatch(palette.getMutedSwatch());//设置每个鸡汤的颜色样本
-                            SoupViewBindListener.this.getView().setBackgroundColor(palette.getMutedSwatch().getRgb());
+                            SoupViewBindListener.this.soup.getData().setColor_swatch(myAppTheme.getMainSwatch(palette.getMutedSwatch()));//设置每个鸡汤的颜色样本
+                            SoupViewBindListener.this.getView().setBackgroundColor(myAppTheme.getMainSwatch(palette.getMutedSwatch()).getRgb());
                         }
                     });
                 }

@@ -19,7 +19,10 @@ public class MyAppTheme {
         this.mainSwatch = mainSwatch;
     }
 
-    public Palette.Swatch getMainSwatch(){
-        return this.mainSwatch;
+    public Palette.Swatch getMainSwatch(Palette.Swatch swatch){
+        if (swatch == null)
+            return this.mainSwatch;
+        else
+            return swatch;
     }
 }
